@@ -1,5 +1,6 @@
 # TP1-Algoritmos-2-z78
 ## O relatório está presente no arquivo "Trabalho Prático 1 Algoritmos 2.pdf"
+## Os arquivos de teste estão na pasta "arquivos_de_teste"
 Trabalho Prático 1
 DCC216 - Algoritmos 
 Igor Joaquim da Silva Costa
