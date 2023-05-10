@@ -1,6 +1,6 @@
 import sys
 import os
-path = "files/"
+path = "arquivos_de_teste/"
 exe = "./bin/tp1.out"
 out = ".z78"
 for file in os.listdir(path):
