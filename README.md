@@ -1,36 +1,36 @@
-# TP1-Algoritmos-2-z78
-## O relatório está presente no arquivo "Trabalho Prático 1 Algoritmos 2.pdf"
-## Os arquivos de teste estão na pasta "arquivos_de_teste"
-Trabalho Prático 1
-DCC216 - Algoritmos 
+# TP1-Algorithms-2-z78
+## The report is present in the file "Practical Work 1 Algorithms 2.pdf"
+## The test files are in the "test_files" folder
+Practical Work 1
+DCC216 - Algorithms
 Igor Joaquim da Silva Costa
 
-## 1. Introdução
-O problema proposto foi implementar o algoritmo LZ78 para compressão de texto com o auxílio de uma árvore trie. 
-O algoritmo de compressão LZ78 é um método que busca substituir as sequências de caracteres repetidos em um texto por códigos que representam essas sequências, com o objetivo de reduzir o tamanho do arquivo original. Ele funciona em tempo linear em relação ao tamanho do arquivo de entrada, sendo eficiente para comprimir grandes córpus onde as sequências possuem estrutura parecida.
-Para implementá-lo, é necessário utilizar um dicionário que possibilite a realização de muitas buscas e inserções de dados. Nesse sentido, a árvore Trie surge como uma estrutura de dados eficiente para a implementação do algoritmo. Este trabalho tem como objetivo a implementação do algoritmo LZ78 utilizando a árvore Trie como dicionário. Além disso, busca-se entender como a implementação do LZ78 pode ser utilizada como base para outros algoritmos de compressão atualmente disponíveis.
-Diante do exposto, a documentação presente possui como objetivo detalhar como o sistema foi modelado (Seção 2), como ele foi implementado (Seção 3) e quais seus pontos fortes e limitações (Seção 4). Por fim, o projeto é sumarizado junto com os aprendizados gerados durante a produção do trabalho(Seção 5). A (Seção 6) sumariza as informações de compilação e execução.
+## 1. Introduction
+The proposed problem was to implement the LZ78 algorithm for text compression with the help of a trie tree.
+The LZ78 compression algorithm is a method that seeks to replace sequences of repeated characters in a text with codes that represent these sequences, with the aim of reducing the size of the original file. It works in linear time in relation to the size of the input file, being efficient for compressing large corpuses where sequences have a similar structure.
+To implement it, it is necessary to use a dictionary that allows many searches and data insertions to be carried out. In this sense, the Trie tree emerges as an efficient data structure for implementing the algorithm. This work aims to implement the LZ78 algorithm using the Trie tree as a dictionary. Furthermore, we seek to understand how the LZ78 implementation can be used as a basis for other compression algorithms currently available.
+In view of the above, the present documentation aims to detail how the system was modeled (Section 2), how it was implemented (Section 3) and its strengths and limitations (Section 4). Finally, the project is summarized together with the learning generated during the production of the work (Section 5). (Section 6) summarizes the compilation and execution information.
 
-## 6. Instruções para compilação e execução:
-6.1 Compilação
-	Existem partes do programa que são compatíveis apenas às versões mais recentes da linguagem c++, dito isso, deve-se seguir as seguintes configurações para a compilação:
+## 6. Instructions for compilation and execution:
+6.1 Compilation
+There are parts of the program that are only compatible with the most recent versions of the c++ language, that said, the following configurations must be followed for compilation:
 
-Linguagem: C++
-Compilador: Gnu g++
-Flags de compilação: -std=c++17 -g
-Versão da linguagem: standard C++17
-Sistema operacional (preferência): distribuições baseadas no kernel Linux 5.15.
+Language: C++
+Compiler: Gnu g++
+Compilation flags: -std=c++17 -g
+Language version: standard C++17
+Operating system (preference): distributions based on the Linux 5.15 kernel.
 
-O comando para compilar o programa automaticamente está presente no arquivo “Makefile” e sua execução é chamada pelo comando “make all”. Deste modo, o executável “tp1” estará compilado e pronto para ser utilizado.
-6.2 Execução
-	Seguem as instruções para a execução manual:
+The command to automatically compile the program is present in the “Makefile” file and its execution is called by the “make all” command. This way, the “tp1” executable will be compiled and ready to be used.
+6.2 Execution
+Here are the instructions for manual execution:
 
-Certifique-se que o compilável foi gerado de maneira correta, se algum problema ocorrer, execute o comando “make all” presente no “Makefile”.
+Make sure that the compilation was generated correctly, if any problems occur, run the “make all” command present in the “Makefile”.
 
-Uma vez que os passos anteriores foram cumpridos, execute o programa com o comando:	
-Compressão:
-/bin/tp1.out -c <arquivo_entrada> [-o <arquivo_saida>]
-Descompressão
-./bin/tp1.out -x <arquivo_entrada> [-o <arquivo_saida>]
+Once the previous steps have been completed, run the program with the command:
+Compression:
+/bin/tp1.out -c <input_file> [-o <output_file>]
+Decompression
+./bin/tp1.out -x <input_file> [-o <output_file>]
 
-A saída será impressa no arquivo_saida.
+The output will be printed to the output_file.
